@@ -6,9 +6,9 @@ import { List } from './list';
 
 export const Customer = () => {
   return (
-    <>
-      <h1>Customer</h1>
+    <div className='container p-5'>
+      <div className='h1 mb-4'>Customer</div>
       <List />
-    </>
+    </div>
   );
 };

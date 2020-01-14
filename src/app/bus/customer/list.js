@@ -28,9 +28,10 @@ export const List = () => {
   ));
 
   return (
-    <>
-      <h1>Customers</h1>
-      <table className='table'>
+    <section>
+      <div className='h3'>Customers List</div>
+
+      <table className='table table-striped table-hover'>
         <thead>
           <tr>
             <th scope='col'>Никнейм</th>
@@ -42,6 +43,6 @@ export const List = () => {
           {customersJSX}
         </tbody>
       </table>
-    </>
+    </section>
   );
 };
