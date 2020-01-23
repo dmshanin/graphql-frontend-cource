@@ -1,7 +1,0 @@
-query allCustomers {
-    allCustomers {
-        username
-        name
-        dateCreated
-    }
-}
