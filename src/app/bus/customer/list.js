@@ -12,11 +12,7 @@ export const List = () => {
   }
 
   if (error) {
-    return (
-      <p>
-          Ошибка: {error.message}
-      </p>
-    );
+    return <p>Ошибка: {error.message}</p>;
   }
 
   const customersJSX = customers.map(({ username, name, dateCreated }, index) => (
