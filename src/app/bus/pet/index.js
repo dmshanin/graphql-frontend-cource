@@ -7,7 +7,7 @@ import { List } from './list';
 import { SpecialList } from './specialList';
 import { Profile } from './profile';
 import { CheckinPet } from './checkinPet';
-import { CheckoutPet } from './CheckoutPet';
+import { CheckoutPet } from './checkoutPet';
 
 export const Pet = () => {
   return (
