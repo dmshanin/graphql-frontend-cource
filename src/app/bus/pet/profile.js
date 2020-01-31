@@ -6,18 +6,17 @@ import { useQueryProfile } from './hooks/useQueryProfile';
 
 export const Profile = () => {
   const { getProfile, loading, error, profile } = useQueryProfile();
-  console.log(profile);
 
   const loadProfile = () => {
     getProfile({
       variables: {
-        id: 'C-1'
-      }
+        id: 'C-1',
+      },
     });
   };
 
   if (loading) {
-    return <p>Loading...</p>
+    return <p>Loading...</p>;
   }
 
   if (error) {
@@ -25,7 +24,7 @@ export const Profile = () => {
       <p>
         We have a problem: {error.message}
       </p>
-    )
+    );
   }
 
   return (
@@ -36,5 +35,5 @@ export const Profile = () => {
         {profile && profile.name}
       </p>
     </>
-  )
+  );
 };

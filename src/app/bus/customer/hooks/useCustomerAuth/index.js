@@ -13,7 +13,7 @@ export const useCustomerAuth = () => {
   const [_logIn, { data }] = useMutation(mutationLogIn);
   const { form, handleChange } = useForm({
     username: '',
-    password: ''
+    password: '',
   });
 
   const authorizedCustomer = data && data.logIn;
@@ -25,7 +25,7 @@ export const useCustomerAuth = () => {
 
   const logIn = () => {
     _logIn({
-      variables: form
+      variables: form,
     });
   };
 
@@ -33,5 +33,5 @@ export const useCustomerAuth = () => {
     logIn,
     handleChange,
     authorizedCustomer,
-  }
+  };
 };

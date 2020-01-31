@@ -18,5 +18,5 @@ export const Pet = () => {
       {/*<List />*/}
       {/*<SpecialList />*/}
     </>
-  )
+  );
 };
